@@ -70,12 +70,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case(R.id.cow_btn):
                 toastMsg="this is a cow";
+                break;
             case(R.id.dog_btn):
                 toastMsg="this is a dog";
+                break;
             case(R.id.buffalo_btn):
                 toastMsg="this is a buffalo";
+                break;
             case(R.id.cat_btn):
                 toastMsg="this is a cat";
+                break;
         }
 
         Toast.makeText(getApplicationContext(),toastMsg,Toast.LENGTH_SHORT).show();
