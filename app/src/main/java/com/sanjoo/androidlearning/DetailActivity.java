@@ -31,6 +31,7 @@ public class DetailActivity extends AppCompatActivity {
   }
 
 
+
    private String getStringFromCallingActivity(String key){
           return getIntent().getStringExtra(key);
   }
