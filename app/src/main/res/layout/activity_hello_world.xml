@@ -92,5 +92,4 @@
         app:layout_constraintStart_toStartOf="@id/cat"
         app:layout_constraintTop_toBottomOf="@id/cat"/>
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
