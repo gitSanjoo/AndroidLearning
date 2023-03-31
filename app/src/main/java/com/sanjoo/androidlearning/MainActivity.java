@@ -1,5 +1,6 @@
 package com.sanjoo.androidlearning;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -10,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements RecyclerViewInterface{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +39,15 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager layoutManager=new LinearLayoutManager(this);
         layoutManager.setOrientation(RecyclerView.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setAdapter(new MyAdapter(items));
+        recyclerView.setAdapter(new MyAdapter(items,this));
+    }
+
+    @Override
+    public void onItemClick(int position) {
+
+        Intent intent=new Intent(MainActivity.this,UserDetail.class);
+        intent.putExtra("name","this is user name");
+        startActivity(intent);
+
     }
 }

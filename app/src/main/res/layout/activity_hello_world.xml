@@ -4,10 +4,23 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/Main_layout"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/toolbar_main"
+        app:title="User list"
+        android:background="#3D8840"
+        app:titleTextColor="@color/white"
+        app:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_main" />
 
 </RelativeLayout>
