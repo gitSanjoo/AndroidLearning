@@ -4,6 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FlatDetailActivity">
+    tools:context=".FlatDetailActivity"
+    android:id="@+id/container">
+   <TextView
+       android:id="@+id/flat_no"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       />
+    <TextView
+        android:id="@+id/owner_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flat_no"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go to fragment"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/owner_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

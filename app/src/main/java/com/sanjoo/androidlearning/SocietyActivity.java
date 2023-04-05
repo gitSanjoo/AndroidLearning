@@ -63,7 +63,7 @@ public class SocietyActivity extends AppCompatActivity {
             @Override
             public void onAdapterItemClick(ItemSelectFlat selectedFlat) {
                 Intent intent=new Intent(SocietyActivity.this,FlatDetailActivity.class);
-                intent.putExtra("flatno",selectedFlat.getFlatNo());
+                intent.putExtra("flatNo",selectedFlat.getFlatNo());
                 intent.putExtra("ownerName",selectedFlat.getOwnerName());
                 startActivity(intent);
             }
