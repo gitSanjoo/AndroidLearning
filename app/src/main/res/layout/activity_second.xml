@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Second"
+    android:orientation="vertical">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click me"
+        android:onClick="openAlertDialog"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/customAlertBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Custom Dialog"
+        android:onClick="openCustomAlertDialog"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        />
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:max="100"
+        android:progress="40"
+        android:thumb="@drawable/alert1"
+        android:background="@drawable/custom_process"
+        />
+<!--  android:indeterminate="true"
+      android:rotation="90"
+-->
+    <TextView
+        android:id="@+id/seekBar_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:gravity="center"
+        android:textAlignment="center"/>
+
+    <ProgressBar
+        android:id="@+id/my_progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_process"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"
+        android:progress="40"/>
+    <!-- android:indeterminate="true"-->
+    <Button
+        android:id="@+id/progressBar_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start progress bar"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:onClick="startProgressBar"/>
+
+    <Button
+        android:id="@+id/progress_dialog_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Progress dialog"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_process"
+        android:onClick="openProgressDialog"/>
+
+    <Button
+        android:id="@+id/prg_dialog_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open customized PrgDialog"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:onClick="openPrgDialog"/>
+
+</LinearLayout>
